@@ -6,3 +6,9 @@ terraform {
     }
   }
 }
+
+variable "do_token" {}
+
+provider "sam" {
+  token = var.do_token
+}
