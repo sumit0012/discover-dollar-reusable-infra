@@ -8,6 +8,8 @@ module "droplets" {
 module "dns" {
   source   = "../../modules/dns-records"
 
-  domain_name   = "your_dev_domain"
+  domain_name   = "your_prod_domain"
   ipv4_address  = module.droplets.lb_ip
 }
+  
+
